@@ -1,0 +1,17 @@
+byte short int long float double boolean char void
+true false null
+if else switch case default while for do
+continue break return
+const goto
+package import
+class interface enum
+public protected private
+final static transient strictfp
+volatile synchronized
+abstract implements extends
+this super
+instanceof
+new
+throws throw try catch finally
+native
+assert

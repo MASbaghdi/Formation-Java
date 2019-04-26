@@ -1,15 +1,647 @@
-<section data-background-image="img/background.png">
+<!--
+<section>
   <img src="img/banniere_trans_green.png"></img>
 </section>
+-->
 
-<section data-background-image="img/background.png">
-	<h3>Programmation impérative</h3>
-	<p class="fragment" data-fragment-index="3">Appears last</p>
-	<p class="fragment" data-fragment-index="1">Appears first</p>
-	<p class="fragment" data-fragment-index="2">Appears second</p>
+<section>
+  <h3>Session 0 : Introduction</h3>
+	<ul>
+		<li class="fragment">Introduction génerale</li>
+		<li class="fragment">Historique de la programmation</li>
+		<li class="fragment">Introduction à JAVA</li>
+		<li class="fragment">Introduction à la programmation impérative</li>
+	</ul>
 </section>
 
-<section data-background-image="img/background.png">	
-  <h3>Exemple de code Java</h3>
-  <pre><code class="hljs java" import="hello.java"></code></pre>
+<section>
+	<h4>Introduction générale</h4>
+	<section>
+		<h5>L'informatique ?</h5>
+		<p class="fragment">L'informatique est le traitement automatique de l'information.</p>
+	</section>
+
+	<section>
+		<h5>L'ordinateur ?</h5>
+		<p class="fragment">L'ordinateur est la machine qui permet de réaliser des opérations graçe à son système informatique.</p>
+		<p class="fragment">Un système informatique est composé de deux parties :</p>
+	</section>
+
+	<section>
+		<h5>1. Hardware :</h5>
+		<p class="fragment">Elle désigne le matériel physique (MC, CPU,...).</p>
+		<div>
+			<div style="position:absolute;width:100%" class="fragment fade-in-then-out">
+				La mémoire centrale (MC) :<br/>
+				<img src="img/mc.jpg"></img>
+			</div>
+			<div style="position:absolute;width:100%" class="fragment">
+				Central Processing Unit (CPU):<br/>
+				<img src="img/cpu.jpg"></img>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h3>2. Software :</h3>
+		<p class="fragment">Elle désigne l'ensemble de logiciels et d'applications.</p>
+	</section>
+
+	<section>
+		<h4>Un algorithme ?</h4>
+		<p class="fragment">Un algorithme est une suite finie et non ambiguë d’opérations ou d'instructions permettant de résoudre un problème.</p>
+	</section>
+
+	<section>
+		<h4>La différence entre un algorithme et un programme ?</h4>
+		<p class="fragment">Un algorithme est écrit dans un langage naturel.</p>
+		<p class="fragment">Un programme est écrit dans un langage de programmation compris par la machine.</p>
+		<p class="fragment">L'exécution d'un algorithme doit toujours se terminer avec un résultat.</p>
+	</section>
+
+	<section>
+		<p>Exemple : <br/> L’algorithme du café chaud</p>
+	</section>
+	<section>
+		<p>L'exécution d'un programme peut conduire à une boucle infinie (ne jamais s'arrêter).</p>
+		<p class="fragment">Exemple :<br/>
+			Les systèmes d'exploitation .</p>
+		</section>
+		<section>
+			<h4>La programmation ?</h4>
+			<p class="fragment">Le processus de transformation d'une solution théorique en une solution logicielle.</p>
+		</section>
+</section>
+
+
+<section>
+  <h3>Historique de la programmation</h3>
+	<img class="fragment" src="img/historique.png"></img>
+</section>
+
+
+<section>
+  <h3>Introduction à Java</h3>
+
+	<section>
+		<h4>Qu'est-ce que Java ?</h4>
+		<img src="img/java.png"></img>
+	</section>
+
+	<section>
+		<p>Java est un langage de programmation à usage général, évolué et orienté
+			objet dont la syntaxe est proche du C.</p>
+		<p class="fragment">Java est très largement utilisé pour le développement d'applications</p>
+	</section>
+
+	<section>
+		<h4>Les caractéristiques de  Java :</h4>
+		<ul>
+			<li class="fragment">Portable</li>
+			<li class="fragment">Orienté objet</li>
+			<li class="fragment">Fortement typé</li>
+			<li class="fragment">Assure la gestion de la mémoire</li>
+			<li class="fragment">Sûr</li>
+			<li class="fragment">Econome</li>
+			<li class="fragment">Multitâche</li>
+		</ul>
+	</section>
+
+	<section>
+		<h4>Que faut-il pour faire fonctionner un programme Java ?</h4>
+		<img src="img/jdk_jre_jvm.png"></img>
+	</section>
+</section>
+
+
+<!--
+<section>
+  <h3>Introduction à la programmation impérative </h3>
+</section>
+
+	<br/>
+	<br/>
+
+	<section>
+		<h3>Un paradigme</h3>
+	</section>
+	<section>
+		C'est un schéma qui éxprime une école de pensées dans la programmation des machines.
+	</section>
+	<section>
+
+				<h3>Impératif</h3>
+
+	</section>
+	<section>
+
+				<h3>Orienté objet</h3>
+
+	</section>
+	<section>
+
+				<h3>Fonctionnel</h3>
+
+	</section>
+	<section>
+
+				<h3>Logique</h3>
+
+	</section>
+	<section>
+
+				<h3>Agent</h3>
+
+	</section>
+	<section>
+		<h2>Pourquoi étudier plusieurs paradigme sachant qu'un seul suffit ?</h2>
+	</section>
+
+	<section>
+	<ul>
+		<li>
+		 	<h2>Le paradigme impératif :</h2>
+		</li>
+	</ul>
+	</section>
+
+	<section>
+		La programmation impérative  ou procédurale repose sur l'axiome : "Faire ceci puis cela"
+	</section>
+	<section>
+		 Elle exprime le fait de préciser la manière par laquelle s'effectue la résolution du problème.
+	</section>
+</section>
+
+<section>
+	<h3>Ses caractéristque</h3>
+</section>
+<section>
+	1.Le programme est composé de deux parties :
+</section>
+<section>
+	Déclaration : pour réserver l'espace mémoire.
+</section>
+<section>
+	Traitement: la séquence d'instruction à exécuter.
+</section>
+<section>
+	2.Le changement incrémental d'état de programme.
+</section>
+<section>
+	3.L'utilisation de la notion de sous-problèmes.
+</section>
+	<section>
+		<h3>Les limites de l'impératif :</h3>
+	</section>
+	<section>
+		<ol>
+			<li>
+				No adaptabilité aux problèmes complexes.
+			</li>
+			<li>
+				Effet de bord due à la manipulation éxéssive de la mémoire.
+			</li>
+			<li>
+				Problème de aliasing.
+			</li>
+
+
+		</ol>
+	</section>
+-->
+
+<section data-background-image="img/background.png">
+	<h3>Introduction à la Programmation impérative</h3>
+	<ul>
+		<li class="fragment" data-fragment-index="1">Les variables</li>
+		<li class="fragment" data-fragment-index="2">Les structures conditionnelles</li>
+		<li class="fragment" data-fragment-index="3">Les structures répétitives</li>
+	</ul>
+</section>
+
+<section data-background-image="img/background.png">
+	<h4>La variable</h4>
+	<section>
+		<ul>
+			<li class="fragment">Occupe un espace dans la mémoire centrale.</li>
+			<li class="fragment">Elle possède un nom et un type.</li>
+			<li class="fragment">Elle a une valeur.</li>
+		</ul>
+	</section>
+	<section>
+		<ul>
+			<li class="fragment">
+				Doit être <b>déclarée</b> avant toute utilisation.<br/>
+				<pre><code class="hljs java">nom_type nom_variable;</code></pre>
+			</li>
+			<li class="fragment">
+				Le fait de lui donner une valeur est appelé <b>affectation</b>.<br/>
+				<pre><code class="hljs java">nom_variable = valeur;</code></pre>
+			</li>
+			<li class="fragment">
+				déclaration + affectation = initialisation.
+				<pre><code class="hljs java">nom_type nom_variable = valeur;</code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section data-background-image="img/background.png">
+	<h4>Les types primitives</h4>
+
+	<section>
+		<table>
+			<caption>Les nombres entiers relatifs ($\subset \mathbb{Z}$)</caption>
+			<thead>
+				<th>Nom</th>
+				<th>Valeurs</th>
+				<th>Operateurs</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>byte</td>
+					<td>[-128, 127]</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+				<tr>
+					<td>short</td>
+					<td>[-32 768, 32 767]</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>[-2 147 483 468, 2 147 483 647]</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+				<tr>
+					<td>long</td>
+					<td>[-9 * 10 ^ 8, 9 * 10 ^ 8]</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<table>
+			<caption>Les nombres réels ($\subset \mathbb{R}$)</caption>
+			<thead>
+				<th>Nom</th>
+				<th>Valeurs</th>
+				<th>Operateurs</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>float</td>
+					<td>0.5, 10.2, -5 * 10 ^ -3, ...</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>0.5, 10.2, -5 * 10 ^ -3, ...</td>
+					<td>+, -, *, /, %</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<table>
+			<caption>Le type booleén</caption>
+			<thead>
+				<th>Nom</th>
+				<th>Valeurs</th>
+				<th>Operateurs</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>boolean</td>
+					<td>true, false</td>
+					<td>&&, ||, !</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<table>
+			<caption>Caractères et Chaines de caractères</caption>
+			<thead>
+				<th>Nom</th>
+				<th>Valeurs</th>
+				<th>Operateurs</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>char</td>
+					<td>'a', 'b', 'A', '0', '$', ...</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>String</td>
+					<td>"JAVA", "Skikda 21", "£€$$", ...</td>
+					<td>+</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+</section>
+
+<section data-background-image="img/background.png">
+	<section>
+		<h4>Règles sur le nommage de variables</h4>
+		<ul>
+			<li class="fragment">Le nom doit commencer par a-z, A-Z, $ ou _.</li>
+			<li class="fragment">Il peux contenir a-z, A-Z, 0-9, $ et _ mais pas d'espaces.</li>
+			<li class="fragment">
+				Il ne peux pas être un mot clé, un mot réservé ou une constante litérale :
+				<pre><code style="height: 100px" class="hljs java" import="keywords.txt"></code></pre>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h4>Convention sur le nommage de variables</h4>
+		<ul>
+			<li class="fragment">Le nom doit commencer par une minuscule (a-z).</li>
+			<li class="fragment">
+				Si le nom contient plusieurs mots le premier commencera par une
+				minuscule et les autres par une majuscule.<br/>
+				Exemple :
+				<pre><code class="hljs java" data-trim>
+byte groupe;
+float moyenneEtudiant;
+int nombreEtudiantsAbsents;
+				</code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section data-background-image="img/background.png">
+	<section>
+		<h4>Les expressions arithmétiques</h4>
+		<ul>
+			<li class="fragment">
+				Une expression peut être la valeur d'une variable (entière ou réelle).
+				<pre><code class="hljs java">x, moyenneEtudiant, nombreEtudiantsAbsents, ...</code></pre>
+			</li>
+			<li class="fragment">
+				Elle peut être une constante litérale.
+				<pre><code class="hljs java">0, 1, 13, -30, 0.2, ...</code></pre>
+			</li>
+			<li class="fragment">
+				Le résultat d'une fonction.
+				<pre><code class="hljs java">f(x), Math.sin(expression), Math.pow(5, 2), ...</code></pre>
+			</li>
+			<li class="fragment">
+				La combinaison d'autres expressions avec des opérateurs arithmétique.
+				<pre><code class="hljs java">20 * x + 2, 2 * Math.sin(x / 2), ...</code></pre>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h4>Les expressions booléennes</h4>
+		<ul>
+			<li class="fragment">
+				Une expression peut être la valeur d'une variable (booléenne).
+			</li>
+			<li class="fragment">
+				Elle peut être une constante litérale (true ou false).
+			</li>
+			<li class="fragment">
+				Le résultat d'une fonction.
+			</li>
+			<li class="fragment">
+				Le résultat d'une comparaison.
+				<pre><code class="hljs java">moyenneEtudiant < 10, x != y, nombreEtudiantsAbsents == 0</code></pre>
+			</li>
+			<li class="fragment">
+				La combinaison d'autres expressions avec des opérateurs logiques.
+				<pre><code class="hljs java">!((moyenneEtudiant >= 0) && (moyenneEtudiant <= 20)), ...</code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section data-background-image="img/background.png">
+
+	<section>
+		<h4>Les structures conditionnelles</h4>
+		<p>Permettent de réaliser des actions suivant qu'une certaine condition est
+			satisfaite ou non.</p>
+	</section>
+
+	<section>
+		<h4>Le if </h4>
+		<div class="fragment">
+			<p>La syntaxe :</p>
+			<pre><code data-trim class="hljs java">
+if (expression_booléenne) {
+	instruction0;
+	instruction1;
+	...
+}
+			</code></pre>
+		</div>
+		<div class="fragment">
+			<p>Exemple :</p>
+			<pre><code data-trim class="hljs java">
+if (nombreEtudiantsAbsents == nombreEtudiants) {
+	System.out.println("Tout le monde est absent.");
+}
+			</code></pre>
+		</div>
+	</section>
+
+	<section>
+		<h4>Le if else</h4>
+		<div class="fragment">
+			<p>La syntaxe :</p>
+			<pre><code data-trim class="hljs java">
+if (expression_booléenne) {
+	...
+} else {
+
+}
+		</code></pre>
+	</div>
+	<div class="fragment">
+			<p>Exemple :</p>
+			<pre><code data-trim class="hljs java">
+if (moyenneEtudiant &gt;= 10) {
+	System.out.println("Admis");
+} else {
+	System.out.println("Ajourné");
+}
+			</code></pre>
+		</div>
+	</section>
+
+	<section>
+		<h4>Le if else if ... else </h4>
+		<div>
+			<div class="fragment fade-in-then-out" style="position:absolute;width:100%">
+				<p>La syntaxe :</p>
+				<pre><code data-trim class="hljs java">
+if (expression_booléenne) {
+	...
+}
+else if (expression_booléenne) {
+	...
+}
+else if (expression_booléenne) {
+	...
+}
+...
+else {
+	...
+}
+				</code></pre>
+			</div>
+			<div class="fragment" style="position:absolute;width:100%">
+				<p>Exemple :</p>
+				<pre><code data-trim class="hljs java">
+if (moyenneEtudiant &lt; 8) {
+	System.out.println("Faible");
+} else if (moyenneEtudiant &gt;= 8 && moyenneEtudiant &lt; 12 ) {
+	System.out.println("Moyen");
+} else if (moyenneEtudiant &gt;= 12 && moyenneEtudiant &lt; 17) {
+	System.out.println("Bon");
+} else {
+	System.out.println("Excellent");
+}
+				</code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h4>Le switch</h4>
+		<p>Devoir de maison ...</p>
+	</section>
+
+</section>
+
+<section >
+
+	<section>
+		<h4>Les structures répétitives</h4>
+		<p>Ils permettent de répéter un ensemble d'actions un nombre déterminé de
+			fois, ou tant qu'une condition est satisfaite.</p>
+	</section>
+
+	<section>
+		<h4>La boucle while</h4>
+		<div class="fragment">
+			<p>La syntaxe :</p>
+			<pre><code data-trim class="hljs java">
+while (expression_booléenne) {
+	instruction0;
+	instruction1;
+	...
+}
+			</code></pre>
+		</div>
+		<div class="fragment">
+			<p>Exemple :</p>
+			<pre><code data-trim class="hljs java">
+int i = 0;
+while (i &lt; 10) {
+	System.out.println("Hello World !!!");
+	i = i + 1;
+}
+			</code></pre>
+		</div>
+	</section>
+
+	<section>
+		<h4>La boucle for</h4>
+		<div class="fragment">
+			<p>La syntaxe :</p>
+			<pre><code data-trim class="hljs java">
+for (initialisation; condition; mise_a_jour) {
+	instruction0;
+	instruction1;
+	...
+}
+			</code></pre>
+		</div>
+		<div class="fragment">
+			<p>Exemple :</p>
+			<pre><code data-trim class="hljs java">
+for (int i = 0; i &lt; 10; i = i + 1) {
+	System.out.println("Hello World !!!");
+}
+			</code></pre>
+		</div>
+	</section>
+
+	<section>
+		<h4>La boucle do while </h4>
+		<div class="fragment">
+			<p>La syntaxe :</p>
+			<pre><code data-trim class="hljs java">
+do {
+	instruction0;
+	instruction1;
+	...
+} while (expression_booléenne);
+		</code></pre>
+	</div>
+		<div class="fragment">
+			<p>Exemple :</p>
+			<pre><code data-trim class="hljs java">
+int i = 0;
+do {
+	System.out.println("Hello World !!!");
+	i = i + 1;
+} while (i &lt; 10);
+			</code></pre>
+		</div>
+	</section>
+
+</section>
+
+<section>
+	<h4>Les tableaux</h4>
+
+	<section>
+		<p>Un tableau est une collection statique et ordonnée de variables.</p>
+	</section>
+
+	<section>
+		<ul>
+			<li class="fragment">
+				Déclaration d'un tableau :
+				<pre><code data-trim class="hljs java">
+nom_type[] nom_tableau;
+				</code></pre>
+			</li>
+			<li class="fragment">
+				Création d'un nouveau tableau :
+				<pre><code data-trim class="hljs java">
+nom_tableau = new nom_type[taille_tableau];
+				</code></pre>
+			</li>
+			<li class="fragment">
+				Accéder à un élément avec son indice (le premier élément est à l'indice 0) :
+				<pre><code data-trim class="hljs java">
+nom_tableau[indice] = valeur;
+				</code></pre>
+			</li>
+			<li class="fragment">
+				Récuperer le nombre d'éléments :
+				<pre><code data-trim class="hljs java">
+nom_tableau.length
+				</code></pre>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<p>Comment réaliser des matrices en Java ?</p>
+	</section>
+
 </section>

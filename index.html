@@ -18,14 +18,25 @@
 
 		<script src="js/reveal.js"></script>
 		<script src="js/import.js"></script>
+		<script src="js/jquery.slim.min.js"></script>
 		<script>
 			importAll(() => {
+				$(".reveal .slides section").attr("data-background-image", "img/background.png");
+				console.log($(".reveal .slides section"));
+
 				Reveal.initialize({
+					hash: true,
+					math: {
+						mathjax: 'MathJax/MathJax.js',
+						config: 'TeX-AMS_CHTML'
+					},
 					dependencies: [
-						{ src: 'js/highlight.js', async: true }
+						{ src: 'js/highlight.js', async: true },
+						{ src: 'js/math.js', async: true }
 					]
 				});
 				Reveal.configure({ slideNumber: 'c/t' });
+
 			});
 		</script>
 	</body>
