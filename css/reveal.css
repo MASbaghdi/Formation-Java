@@ -267,7 +267,9 @@ body {
   .reveal .controls .controls-arrow {
     position: relative;
     width: 3.6em;
-    height: 3.6em; }
+    height: 3.6em;
+    color: green;
+  }
     .reveal .controls .controls-arrow:before {
       -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
               transform: translateX(0.5em) translateY(1.55em) rotate(45deg); }
